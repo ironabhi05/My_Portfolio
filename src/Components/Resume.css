@@ -1,0 +1,120 @@
+.Resume {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #dbeafe;
+}
+
+.Resume h1 {
+    color: #333;
+    font-size: 4em;
+    text-align: center;
+}
+
+.Resume h2 {
+    font-size: 1.2em;
+}
+.Resume h3 {
+    font-size: 1.0em;
+    font-weight: 700;
+}
+.Resume h6 {
+    font-size: .8em;
+    color: gray;
+}
+.Resume hr {
+    margin-top: 5px;
+    border: 1px solid gray;
+    margin-bottom: 15px;
+}
+/* Container styling */
+
+/* Blocka and Blockb common styles */
+.blocka, .blockb {
+    flex: 1;
+    padding-left: 10px;
+    text-align: justify;
+    border-left: 4px solid #ff4694;
+
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+    .blocka, .blockb {
+        flex: 0 0 48%; /* Take 48% width with some gap between them */
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .blocka, .blockb {
+        flex: 0 0 100%; /* Full width on small screens */
+    }
+}
+
+/* Parent container styling */
+.resume-row {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-between;
+    gap: 20px;
+    padding-left: 80px;
+}
+
+/* Child blocks common styles */
+.education, .experience {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+
+}
+
+/* For larger screens (desktop and tablets) */
+@media (min-width: 768px) {
+    .education, .experience {
+        flex: 0 0 48%; /* Each takes around 48% of the container width */
+    }
+}
+
+/* For smaller screens (mobile) */
+@media (max-width: 767px) {
+    .education, .experience {
+        flex: 0 0 100%; /* Each block takes full width on small screens */
+    }
+}
+
+/* Parent container styling */
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Column styling */
+.skills-column {
+    flex: 1;
+    min-width: 200px; /* Ensures the columns do not shrink too much */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+    .skills-column {
+        flex: 0 0 45%; /* Each column takes up about 45% of the width with space between them */
+    }
+}
+
+/* For smaller screens */
+@media (max-width: 767px) {
+    .skills-column {
+        flex: 0 0 100%; /* Each column takes full width on small screens */
+    }
+}
+
+
+

@@ -1,0 +1,26 @@
+.FAQ {
+    text-align: center;
+    padding: 20px;
+    background-color: #dbeafe;
+    font-family: Arial, sans-serif;
+}
+
+.FAQ h1 {
+    color: #333;
+    font-size: 2em;
+}
+
+.FAQ p {
+    color: #666;
+    font-size: 1.2em;
+}
+.FAQgif{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    border-radius: 20%;
+}
+.qs{
+    background-color: #c7bfed;
+    padding: 4px;
+}

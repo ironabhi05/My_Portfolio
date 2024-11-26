@@ -1,0 +1,187 @@
+/* General Styles */
+.Portfolio {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #dbeafe;
+}
+.Portfolio h1 {
+    color: #333;
+    font-size: 3em; /* Adjusted for responsiveness */
+    text-align: center;
+}
+.Portfolio h2 {
+    font-size: 1.2em;
+}
+.Portfolio h3 {
+    font-size: 1.0em;
+    font-weight: 700;
+}
+.Portfolio h6 {
+    font-size: .8em;
+    color: gray;
+}
+
+.project {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Navigation and Filter Buttons */
+.nav ul {
+    display: flex;
+    justify-content: center; /* Center the navigation */
+    list-style-type: none;
+    padding: 0;
+}
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.filter-buttons button {
+    height: 40px;
+    padding: 5px 15px;
+    margin: 10px 15px;
+    font-size: 1em; /* Adjusted for readability */
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.filter-buttons button:hover {
+    border-bottom: 2px solid #776fff;
+}
+.filter-buttons hr {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #ec4899;
+}
+
+/* Project Image Hover */
+.project-img:hover {
+    transform: scale(1.1);
+    transition-duration: 1.2s;
+}
+
+/* Hire Section */
+.HireBG {
+    background: url(../assets/HireBG.jpg) no-repeat center center/cover;
+    height: 50vh;
+    filter: none;
+    opacity: 0.8;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .HireBG .content {
+    position: relative; /* Creates a new positioning context for the text */
+    filter: none; /* Removes blur from the text */
+    z-index: 1; /* Ensures the text is above the background */
+    color: white; /* Ensures the text is visible */
+    font-size: 2rem; /* Adjust as needed */
+    text-align: center;
+  }
+  
+/* .Hirebtn {
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    top: 4230px; 
+    left: 590px;
+    transform: translate(-50%, -50%); 
+} */
+
+.content button {
+    background: linear-gradient(to top right, #ff4694, #776fff);
+    padding: 1px 30px; /* Adjust padding for responsiveness */
+    font-size: 1em; /* Adjusted for readability */
+    color: white;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.Hirebtn h1{
+    color: black;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.Hirebtn button:hover {
+    background: linear-gradient(to top right, #776fff, #ff4694);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens less than 770px wide */
+@media screen and (max-width: 770px) {
+    .Portfolio h1 {
+        font-size: 2.5em; /* Reduced font size on smaller screens */
+    }
+
+    .filter-buttons button {
+        font-size: 0.9em; /* Smaller button text */
+        margin: 5px 10px;
+    }
+
+    .filter-buttons hr {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust project image size for smaller screens */
+    .project-img {
+        width: 150px; /* Adjust the size of project images */
+        height: 150px;
+    }
+
+    /* Hire Section */
+    .HireBG {
+        height: 40vh; /* Reduced height for smaller screens */
+    }
+
+    .Hirebtn {
+        top: 5660px; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Ensure it is centered */
+    }
+
+    .Hirebtn button {
+        padding: 10px 20px;
+        font-size: 1em; /* Adjust font size */
+    }
+
+    /* Adjust project section layout for smaller screens */
+    .project {
+        padding: 10px;
+    }
+}
+
+/* For screens less than 480px wide */
+@media screen and (max-width: 480px) {
+    .Portfolio h1 {
+        font-size: 2em; /* Further reduce font size */
+    }
+
+    .filter-buttons button {
+        font-size: 0.8em; /* Even smaller font size for buttons */
+        margin: 5px 8px;
+    }
+
+    .project-img {
+        width: 120px; /* Further adjust project image size */
+        height: 120px;
+    }
+    .Hirebtn {
+        top: 9100px; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Ensure it is centered */
+    }
+    .Hirebtn button {
+        padding: 8px 16px;
+        font-size: 0.9em; /* Reduce button font size */
+    }
+}
