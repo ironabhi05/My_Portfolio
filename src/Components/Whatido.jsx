@@ -5,7 +5,7 @@ import gd from '../assets/gd.png';
 import wd from '../assets/WD.png';
 import ba from '../assets/business.png';
 import seo from '../assets/SEO.png';
-import ui from '../assets/ui.png';
+import ui from '../assets/Ui.png';
 import app from '../assets/app.png';
 import AOS from "aos";
 import "aos/dist/aos.css";
