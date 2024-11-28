@@ -1,0 +1,116 @@
+/* Base styles */
+.Home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    background-color: #dbeafe
+}
+
+.text {
+    margin-bottom: 30px;
+}
+
+.text h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.text h2 {
+    font-size: 3rem;
+    color: #776fff;
+    margin-top: 10px;
+}
+
+.text p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+button {
+    z-index: 10; /* Ensures it's on top of other elements */
+    position: relative;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 905px) {
+    .Home{
+        margin-top: 0%;
+    }
+    .text{
+        padding-bottom: 50px;
+    }
+    .text h1 {
+        font-size: 1.5rem;
+    }
+
+    .text h2 {
+        font-size: 2.5rem;
+    }
+
+    .text p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+
+    .relative img {
+        width: 80%; /* Shrinks image for smaller screens */
+        margin: 0 auto; /* Centers the image */
+    }
+}
+/* For tablets and small screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .text h1 {
+        font-size: 1.5rem;
+    }
+
+    .text h2 {
+        font-size: 2.5rem;
+    }
+
+    .text p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+
+    .relative img {
+        width: 80%; /* Shrinks image for smaller screens */
+        margin: 0 auto; /* Centers the image */
+    }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .text h1 {
+        font-size: 1.2rem;
+    }
+
+    .text h2 {
+        font-size: 2rem;
+    }
+
+    .text p {
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 6px 16px;
+    }
+
+    .relative img {
+        width: 100%; /* Ensures the image fits within the screen */
+        margin: 0 auto;
+    }
+}
