@@ -2,11 +2,15 @@
     height: 200px;
     width: 100%;
     color: white;
-    background-color: black;
     font-family: Arial, sans-serif;
+    background-color: #111122;
+    opacity: 0.9;
+    background-image: radial-gradient(#4d4dcb 1px, #111122 1px);
+    background-size: 20px 20px;
 
 }
-.text{
+
+.text {
     /* display: flex; */
     width: 100%;
     height: 60%;
