@@ -1,8 +1,9 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { FaWhatsapp } from "react-icons/fa";
-
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';   
+import { FaEnvelope } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 const navigation = [
   { name: 'HOME', href: '#home', current: false },
   { name: 'ABOUT ME', href: '#about', current: false },
@@ -67,10 +68,24 @@ function Navbar() {
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                   <button
                     type="button"
+                    className="relative rounded-full bg-gradient-to-tr from-[#ff4694] to-[#776fff] p-1 m-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  >
+                    <span className="sr-only">Mail</span>
+                    <FaEnvelope style={{ fontSize: "24px", padding:'2px'}} />
+                  </button>
+                  <button
+                    type="button"
+                    className="relative rounded-full m-1 bg-gradient-to-tr from-[#ff4694] to-[#776fff] p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  >
+                    <span className="sr-only">Linked In</span>
+                    <a href="https://www.linkedin.com/in/abhinav-mishra-204bb028b"><FaLinkedin style={{ fontSize: "24px", padding:'2px'}} /></a>
+                  </button>
+                  <button
+                    type="button"
                     className="relative rounded-full bg-gradient-to-tr from-[#ff4694] to-[#776fff] p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                   >
                     <span className="sr-only">Contact Us</span>
-                    <FaWhatsapp className="h-6 w-6" aria-hidden="true" />
+                   <a href="https://github.com/ironabhi05"> <FaGithub style={{ fontSize: "24px",padding:'2px'}} /></a>
                   </button>
                 </div>
               </div>

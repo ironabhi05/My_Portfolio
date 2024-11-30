@@ -11,6 +11,7 @@ import Portfolio from './Components/Portfolio.jsx';
 import FAQ from './Components/FAQ.jsx';
 import Footer from './Components/Footer.jsx';
 import Hbtn from './Components/Hbtn.jsx';
+import Contact from './Components/Contact.jsx';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Portfolio />
       <Hbtn />
       <FAQ />
+      <Contact />
       <Footer />
     </>
   )

@@ -52,7 +52,7 @@ function FAQ() {
                     </span>
                     </span>
                 <h2 data-aos="fade-up" className="sm:text-4xl text-3xl font-extrabold text-base-content">Have any questions?</h2>
-                <div className="py-24 px-8 max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
+                <div className="py-8 px-8 max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
                     {/* Left Section */}
                     <div  data-aos="fade-up" className="flex flex-col text-left basis-1/2">
                         <img
@@ -68,6 +68,7 @@ function FAQ() {
                             <li key={faq.id} className="group">
                                 {/* Question Button */}
                                 <button
+                                data-aos="fade-up"
                                     onClick={() => toggleFAQ(faq.id)}
                                     className="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
                                     aria-expanded={expanded === faq.id}
