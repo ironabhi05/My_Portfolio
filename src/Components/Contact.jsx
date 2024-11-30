@@ -1,8 +1,12 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import withReactContent from 'sweetalert2-react-content';
+import Swal from 'sweetalert2';
+
 
 export default function Contact() {
     const form = useRef();
+    const MySwal = withReactContent(Swal);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -13,21 +17,30 @@ export default function Contact() {
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    Swal.fire({
+                        title: "Thank You!",
+                        text: "Your message has been sent successfully!",
+                        icon: "success"
+                      });
+                      form.current.reset();
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
+                    Swal.fire({
+                        title: "Oops!",
+                        text: "Something went wrong, please try again later.",
+                        icon: "error",
+                      });
                 },
             );
     };
     return (
-        <div className="contact">
+        <div id="contact">
 
             <div className="relative h-screen isolate overflow-hidden bg-blue-200 py-4 ">
                 <div className="pt-1 md:pt-8 ">
                     <div className="p-2 md:p-4">
                         <h1 className="text-white text-center pb-8 font-light text-4xl md:text-5xl lg:text-6xl">Contact Me</h1>
-                        <form className="flex flex-col items-center" onSubmit={sendEmail}>
+                        <form className="flex flex-col items-center" ref={form} onSubmit={sendEmail}>
                             <div className="md:w-3/4 lg:w-2/3 xl:w-1/2">
                                 <div className="flex flex-col md:flex-row">
                                     <input

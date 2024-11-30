@@ -71,7 +71,7 @@ function Navbar() {
                     className="relative rounded-full bg-gradient-to-tr from-[#ff4694] to-[#776fff] p-1 m-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                   >
                     <span className="sr-only">Mail</span>
-                    <FaEnvelope style={{ fontSize: "24px", padding:'2px'}} />
+                    <a href="#contact"><FaEnvelope style={{ fontSize: "24px", padding:'2px'}} /></a>
                   </button>
                   <button
                     type="button"
