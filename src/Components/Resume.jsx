@@ -2,13 +2,13 @@ import React from 'react';
 import './Resume.css'
 import resume from '../assets/Abhinav Mishra Resume.pdf'
 function Resume() {
-        const files = [
-          {
+    const files = [
+        {
             name: "DOWNLOAD CV",
             url: resume // If file is in public folder
-          }
-        ];
-      
+        }
+    ];
+
     return (
         <div id='resume' className="Resume">
             <p data-aos="fade-up" className='text-center mb-2 ' style={{ fontSize: '30px', color: 'black' }}>
@@ -58,7 +58,7 @@ function Resume() {
                             knowledge of building full-stack web applications using MongoDB, Express.js, React, and
                             Node.js. Developed hands-on projects, enhancing skills in front-end and back-end integration,
                             RESTful APIs, and responsive design.</h6>
-                        <hr data-aos="fade-up"/>
+                        <hr data-aos="fade-up" />
                         <h2 data-aos="fade-up">Asossiate Jr Developer & Intern</h2>
                         <h3 data-aos="fade-up">Digicoders Technologies  Pvt. Ltd Lucknow / 6 Months</h3>
                         <h6 data-aos="fade-up">Worked as an intern in a software development company, where I was involved
@@ -68,7 +68,23 @@ function Resume() {
                     </div>
                 </div>
             </div>
-            <div className="Skill" style={{background:'#c7bfed', borderRadius:'10px', padding:'2%'}}>
+            <div className="Download">
+                {files.map((file, index) => (
+                    <button
+                        key={index}
+                        data-aos="zoom-in"
+                        className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 group bg-gradient-to-tr from-[#ff4694] to-[#776fff] group-hover:from-blue-400 group-hover:to-blue-600 hover:text-white light:text-white focus:ring-4 focus:outline-none focus:ring-blue-200 light:focus:ring-blue-900"
+                        style={{ marginTop: "10px" }}
+                    >
+                        <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white light:bg-gray-900 group-hover:bg-opacity-0">
+                            <a href={file.url} download className="text-gray-900">
+                                {file.name}
+                            </a>
+                        </span>
+                    </button>
+                ))}
+            </div>
+            <div className="Skill" style={{ background: '#c7bfed', borderRadius: '10px', padding: '2%' }}>
                 <p data-aos="fade-up" style={{ fontSize: '30px', fontWeight: 'bold', textAlign: 'justify', paddingLeft: '80px' }}>My Skills</p>
                 <div className="skills-row">
                     <div data-aos="fade-down"
@@ -117,22 +133,6 @@ function Resume() {
                     </div>
                 </div>
             </div>
-            <div className="Download">
-      {files.map((file, index) => (
-        <button
-          key={index}
-          data-aos="zoom-in"
-          className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 group bg-gradient-to-tr from-[#ff4694] to-[#776fff] group-hover:from-blue-400 group-hover:to-blue-600 hover:text-white light:text-white focus:ring-4 focus:outline-none focus:ring-blue-200 light:focus:ring-blue-900"
-          style={{ marginTop: "50px" }}
-        >
-          <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white light:bg-gray-900 group-hover:bg-opacity-0">
-            <a href={file.url} download className="text-gray-900">
-              {file.name} 
-            </a>
-          </span>
-        </button>
-      ))}
-    </div>
         </div>
     )
 }

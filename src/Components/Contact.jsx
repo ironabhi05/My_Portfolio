@@ -70,6 +70,7 @@ export default function Contact() {
                                 ></textarea>
                             </div>
                             <button
+                             id='btn'
                                 type="submit"
                                 className="border-2 text-md mt-7 rounded-md py-2 px-4 bg-gradient-to-tr from-[#ff4694] to-[#776fff] hover:bg-gradient-to-tr from-[#776fff] to-[#ff4694] text-gray-100 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-pink-500"
                             >

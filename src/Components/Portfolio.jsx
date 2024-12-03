@@ -99,8 +99,8 @@ function Portfolio() {
             </div>
             <div className="HireBG">
                 <div className="content">
-                <h1>Interested in working with me?</h1>
-                <button>HIRE ME</button>
+                    <h1>Interested in working with me?</h1>
+                    <a href="#contact"><button id="btn">HIRE ME</button></a>
                 </div>
             </div>
 

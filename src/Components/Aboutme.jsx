@@ -65,7 +65,7 @@ function Aboutme() {
                                 Delivering work within time and budget which meets client’s requirements is our moto.
                             </p> </div>
                     </div>
-                    <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+                    <div data-aos="fade-up" className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-8 text-base/7 font-bold text-blue-900 sm:grid-cols-2 md:flex lg:gap-x-36">
                             {info.map((infoItem, info) => (
                                 <a key={infoItem.name || info} href={links[info]?.href}>

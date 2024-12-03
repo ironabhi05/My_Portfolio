@@ -19,6 +19,5 @@
 }
 .card:hover {
     background-color:#c7bfed;
-    transition-timing-function: ease-in-out;
     border-radius: 20px;
 }

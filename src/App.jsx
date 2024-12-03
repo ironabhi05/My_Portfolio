@@ -1,6 +1,7 @@
 //Components And Libraries import
 import React from 'react';
 //Page Import
+import './App.css'
 
 import Navbar from './Components/Navbar.jsx';
 import Home from './Components/Home.jsx';
@@ -18,7 +19,6 @@ function App() {
     <>
       <Navbar />
       <Home />
-
       <Aboutme />
       <Whatido />
       <Resume />

@@ -27,12 +27,12 @@ function Whatido() {
     }, []);
     return (
         <div id="What_I_do" className="Whatido bg-blue-100">
-            <div className="text2">
-                <span data-aos="fade-up" data-aos-anchor-placement="bottom-center" className="text-center mb-2" style={{ fontSize: '30px' }}>
+            <div data-aos="fade-up" className="text2">
+                <span  data-aos-anchor-placement="bottom-center" className="text-center mb-2" style={{ fontSize: '30px' }}>
                     <span className="text-black px-2 bg-gradient-to-tr from-[#ff4694] to-[#776fff]">
                         What I Do?
                     </span>
-                    <h1 data-aos="fade-up" data-aos-anchor-placement="bottom-center">How I can help your next project</h1>
+                    <h1 data-aos-anchor-placement="bottom-center">How I can help your next project</h1>
                 </span>
             </div>
             <div className="bg-white py-24 sm:py-10 rounded-xl">
