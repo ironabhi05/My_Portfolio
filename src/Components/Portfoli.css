@@ -3,10 +3,8 @@
     text-align: center;
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: #dbeafe;
 }
 .Portfolio h1 {
-    color: #333;
     font-size: 3em; /* Adjusted for responsiveness */
     text-align: center;
 }
@@ -17,11 +15,6 @@
     font-size: 1.0em;
     font-weight: 700;
 }
-.Portfolio h6 {
-    font-size: .8em;
-    color: gray;
-}
-
 .project {
     height: auto;
     width: 100%;

@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     padding: 0px;
-    background-color: #dbeafe
+    /* background-color: #dbeafe */
 }
 
 .text {
@@ -14,18 +14,16 @@
 
 .text h1 {
     font-size: 2rem;
-    color: #333;
+
 }
 
 .text h2 {
     font-size: 3rem;
-    color: #776fff;
     margin-top: 10px;
 }
 
 .text p {
     font-size: 1rem;
-    color: #555;
     margin-top: 10px;
 }
 

@@ -45,13 +45,13 @@ function FAQ() {
 
     return (
         <div id="faq" className="FAQ">
-            <div className="relative isolate overflow-hidden bg-custom">
-            <span data-aos="fade-up" data-aos-anchor-placement="bottom-center" className="text-center mb-2" style={{ fontSize: '30px' }}>
-                    <span className="text-black px-2 bg-gradient-to-tr from-[#ff4694] to-[#776fff]">
+            <div data-aos="fade-up" className="relative isolate overflow-hidden">
+            <span data-aos-anchor-placement="bottom-center" className="text-center mb-2" style={{ fontSize: '30px' }}>
+                    <span className=" px-2 bg-gradient-to-tr from-[#ff4694] to-[#776fff]">
                         FAQ
                     </span>
                     </span>
-                <h2 data-aos="fade-up" className="sm:text-4xl text-3xl font-extrabold text-base-content">Have any questions?</h2>
+                <h2  className="sm:text-4xl text-3xl font-extrabold text-base-content">Have any questions?</h2>
                 <div className="py-8 px-8 max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
                     {/* Left Section */}
                     <div  data-aos="fade-up" className="flex flex-col text-left basis-1/2">

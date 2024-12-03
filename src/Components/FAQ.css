@@ -1,17 +1,14 @@
 .FAQ {
     text-align: center;
     padding: 20px;
-    background-color: #dbeafe;
     font-family: Arial, sans-serif;
 }
 
 .FAQ h1 {
-    color: #333;
     font-size: 2em;
 }
 
 .FAQ p {
-    color: #666;
     font-size: 1.2em;
 }
 .FAQgif{

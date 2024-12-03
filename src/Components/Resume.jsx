@@ -11,8 +11,8 @@ function Resume() {
 
     return (
         <div id='resume' className="Resume">
-            <p data-aos="fade-up" className='text-center mb-2 ' style={{ fontSize: '30px', color: 'black' }}>
-                <span className='bg-gradient-to-tr from-[#ff4694] to-[#776fff] text-blue px-2'> RESUME
+            <p data-aos="fade-up" className='text-center mb-2 ' style={{ fontSize: '30px'}}>
+                <span className='bg-gradient-to-tr from-[#ff4694] to-[#776fff] px-2'> RESUME
                 </span></p>
             <h1 data-aos="fade-up">A Summary Of My Resume</h1>
             <div className="resume-row">
@@ -84,7 +84,7 @@ function Resume() {
                     </button>
                 ))}
             </div>
-            <div className="Skill" style={{ background: '#c7bfed', borderRadius: '10px', padding: '2%' }}>
+            <div className="Skill" style={{ borderRadius: '10px', padding: '2%' }}>
                 <p data-aos="fade-up" style={{ fontSize: '30px', fontWeight: 'bold', textAlign: 'justify', paddingLeft: '80px' }}>My Skills</p>
                 <div className="skills-row">
                     <div data-aos="fade-down"

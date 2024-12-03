@@ -1,4 +1,5 @@
 import React from 'react';
+import DarkMode from './Theme/DarkMode.jsx';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';   
 import { FaEnvelope } from "react-icons/fa";
@@ -87,6 +88,7 @@ function Navbar() {
                     <span className="sr-only">Contact Us</span>
                    <a href="https://github.com/ironabhi05"> <FaGithub style={{ fontSize: "24px",padding:'2px'}} /></a>
                   </button>
+                  <DarkMode />
                 </div>
               </div>
             </div>

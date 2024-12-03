@@ -26,16 +26,16 @@ function Whatido() {
         });
     }, []);
     return (
-        <div id="What_I_do" className="Whatido bg-blue-100">
+        <div id="What_I_do" className="Whatido">
             <div data-aos="fade-up" className="text2">
                 <span  data-aos-anchor-placement="bottom-center" className="text-center mb-2" style={{ fontSize: '30px' }}>
-                    <span className="text-black px-2 bg-gradient-to-tr from-[#ff4694] to-[#776fff]">
+                    <span className=" px-2 bg-gradient-to-tr from-[#ff4694] to-[#776fff]">
                         What I Do?
                     </span>
                     <h1 data-aos-anchor-placement="bottom-center">How I can help your next project</h1>
                 </span>
             </div>
-            <div className="bg-white py-24 sm:py-10 rounded-xl">
+            <div className="cardGroup py-24 sm:py-10 rounded-xl">
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <dl className="grid grid-cols-1 gap-x-6 gap-y-10 text-center lg:grid-cols-3">
             {stats.map((stat) => (

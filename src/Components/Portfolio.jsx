@@ -60,7 +60,7 @@ function Portfolio() {
                 <p
                     data-aos="fade-up"
                     className="text-center mb-2"
-                    style={{ fontSize: "30px", color: "black" }}
+                    style={{ fontSize: "30px" }}
                 >
                     <span className="bg-gradient-to-tr from-[#ff4694] to-[#776fff] text-blue px-2">
                         PORTFOLIO
@@ -71,7 +71,7 @@ function Portfolio() {
                 </h1>
 
                 <div className="project">
-                    <div className="bg-white py-24 sm:py-10 rounded-xl">
+                    <div className="projectGroup py-24 sm:py-10 rounded-xl">
                         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
                             <div className="filter-buttons flex flex-wrap gap-4 mb-6">

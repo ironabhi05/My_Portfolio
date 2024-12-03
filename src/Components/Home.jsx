@@ -37,20 +37,20 @@ function Home() {
 
   return (
     <div id='home' className="Home">
-      <section className="pt-10 overflow-hidden bg-blue-100 md:pt-0 sm:pt-16 2xl:pt-16">
+      <section className="pt-10 overflow-hidden md:pt-0 sm:pt-16 2xl:pt-16">
         <div className="px-4 mx-auto sm:px-2 lg:px-6 max-w-5xl">
           <div className="grid items-center grid-cols-1 md:grid-cols-2">
             <div className="text">
-              <h1 className="text-2xl font-bold text-gray-900"> Hey! I Am ABHINAV MISHRA</h1>
+              <h1 className="text-2xl font-bold "> Hey! I Am ABHINAV MISHRA</h1>
               <h2 style={{ fontSize: '50px', color:'#776fff' }}><span ref={el}></span></h2>
-              <p data-aos="fade-up" className="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
+              <p data-aos="fade-up" className="max-w-lg mt-3 text-xl leading-relaxed md:mt-8">
                 Dedicated MERN stack developer with hands-on experience in building full-stack
                 applications. I focus on creating robust, user-centric, and visually appealing digital
                 solutions. Currently pursuing B-Tech and always eager to bring innovative ideas to life.
               </p>
-              <p data-aos="fade-up" className="mt-4 text-xl text-gray-600 md:mt-8">
+              <p data-aos="fade-up" className="mt-4 text-xl md:mt-8">
                 <span className="relative inline-block">
-                  <span className="absolute inline-block w-full bottom-0.5 h-2 bg-yellow-300"></span>
+                  <span className="absolute inline-block w-full bottom-0.5 h-1 bg-blue-100"></span>
                   <span className="relative"> Have a question? </span>
                 </span>
                 <br className="block sm:hidden" />Ask me on <a href="https://www.instagram.com/pt_ironabhi_05/" title="" class="relative transition-all duration-200 text-pink-700 hover:text-pink-700 hover:underline">Instagram</a>

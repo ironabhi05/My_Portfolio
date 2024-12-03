@@ -26,7 +26,7 @@ function Aboutme() {
     }, []);
     return (
         <div id='about' className="aboutme">
-            <div className="relative isolate overflow-hidden bg-blue-200 py-4 ">
+            <div className="relative isolate overflow-hidden py-4 ">
                 <div data-aos="fade-up" className='text-center mb-2 ' style={{ fontSize: '30px' }}>
                     <span className='bg-gradient-to-tr from-[#ff4694] to-[#776fff] text-blue px-2'> About Me
                     </span></div>
