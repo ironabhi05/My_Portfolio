@@ -4,31 +4,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px;
     /* background-color: #dbeafe */
 }
 
 .text {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .text h1 {
     font-size: 2rem;
 
 }
-
+.random-quote{
+    margin: 20px 20px 50px 0px;
+}
+.random-quote img{
+    min-height: 160px;
+}
 .text h2 {
     font-size: 3rem;
-    margin-top: 10px;
 }
 
 .text p {
     font-size: 1rem;
-    margin-top: 10px;
+
 }
 
 button {
-    z-index: 10; /* Ensures it's on top of other elements */
+    z-index: 10;
     position: relative;
     cursor: pointer;
 }
@@ -37,9 +40,6 @@ button {
 @media screen and (max-width: 905px) {
     .Home{
         margin-top: 0%;
-    }
-    .text{
-        padding-bottom: 50px;
     }
     .text h1 {
         font-size: 1.5rem;

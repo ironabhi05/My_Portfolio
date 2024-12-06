@@ -64,6 +64,8 @@ function Aboutme() {
                                 I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me.
                                 Delivering work within time and budget which meets client’s requirements is our moto.
                             </p> </div>
+                            </div>
+
                     </div>
                     <div data-aos="fade-up" className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-8 text-base/7 font-bold text-blue-900 sm:grid-cols-2 md:flex lg:gap-x-36">
@@ -75,7 +77,8 @@ function Aboutme() {
 
                         </div>
                     </div>
-                </div>
+
+               
             </div>
         </div>
     )

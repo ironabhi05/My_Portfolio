@@ -103,11 +103,6 @@ function Portfolio() {
                     <a href="#contact"><button id="btn">HIRE ME</button></a>
                 </div>
             </div>
-
-
-            {/* <div className="Hirebtn">
- 
-                </div> */}
         </div>
     );
 }
