@@ -1,11 +1,11 @@
 import React from 'react';
 import './Resume.css'
-import resume from '../assets/Abhinav Mishra Resume.pdf'
+import resume from '../assets/Abhinav Mishra Cv.pdf'
 function Resume() {
     const files = [
         {
             name: "DOWNLOAD CV",
-            url: resume // If file is in public folder
+            url: resume 
         }
     ];
 

@@ -129,4 +129,24 @@
         font-size: 0.8rem; /* Smaller button text */
         padding: 6px 16px; /* Smaller button padding */
     }
+    .details{
+        overflow: scroll;
+    }
+}
+/* Modals */
+.modal{
+    color: black;
+    width: 700px;
+    height: auto;
+}
+.img{
+    float: right;
+    width: 50%;
+    height: 200px;
+
+}
+.details{
+    float: left;
+    width: 50%;
+    height: 200px;
 }

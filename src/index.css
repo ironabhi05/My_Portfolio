@@ -9,6 +9,7 @@
     --formInput-color: #f7f7f7;
     --cardGroup-background: white;
     --formInput-background: #111827;
+    --aniFont-color:#df0560;
 }
 
 [data-theme="dark"] {
@@ -18,6 +19,7 @@
     --formInput-color: #1a1d23;
     --formInput-background: #dbeafc;
     --cardGroup-background: #292850;
+    --aniFont-color:#776fff;
 }
 
 body {
@@ -42,4 +44,7 @@ body {
 .formInput {
     background-color: var(--formInput-background);
     color: var(--formInput-color);
+}
+.aniFont{
+    color:var(--aniFont-color) ;
 }
