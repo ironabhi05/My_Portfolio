@@ -3,7 +3,6 @@ import './Footer.css'
 let style = {
     color: "#ff4694",
     fontSize: "20px"
-
 }
 const Footer = () => {
   return (
@@ -15,10 +14,10 @@ const Footer = () => {
         <div className="mt-16 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
           <p className="order-2 md:order-1 mt-8 md:mt-0">
              Copyright &copy; 2024 <a href="#" style={style}><span>EgaleCoders</span>
-                </a> . All Rights Reserved.
+                </a> .All Rights Reserved.
           </p>
           <div className="order-1 md:order-2">
-          <span> Designed by</span> <span style={style}>Abhinav Mishra</span>
+          <span> Developed By:</span> <span style={style}>Abhinav Mishra</span>
           </div>
         </div>
       </div>
