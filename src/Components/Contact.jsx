@@ -21,15 +21,15 @@ export default function Contact() {
                         title: "Thank You!",
                         text: "Your message has been sent successfully!",
                         icon: "success"
-                      });
-                      form.current.reset();
+                    });
+                    form.current.reset();
                 },
                 (error) => {
                     Swal.fire({
                         title: "Oops!",
                         text: "Something went wrong, please try again later.",
                         icon: "error",
-                      });
+                    });
                 },
             );
     };
@@ -47,29 +47,33 @@ export default function Contact() {
                                         type="text"
                                         className="formInput my-2 py-2 px-4 rounded-md  w-full md:w-1/2 md:mr-2 outline-none focus:ring-2 focus:ring-pink-400"
                                         placeholder="Name"
+                                        required
                                     />
                                     <input
                                         name='from_email'
                                         type="email"
                                         className="formInput my-2 py-2 px-4 rounded-md w-full md:w-1/2 md:ml-2 outline-none focus:ring-2 focus:ring-blue-600"
                                         placeholder="Email"
+                                        required
                                     />
                                 </div>
                                 <input
                                     name='subject'
                                     type="text"
                                     placeholder="Subject"
+                                    required
                                     className="formInput my-2 py-2 px-4 rounded-md  w-full outline-none focus:ring-2 focus:ring-blue-600"
                                 />
                                 <textarea
                                     name='message'
                                     rows="5"
                                     placeholder="Say Something"
+                                    required
                                     className="formInput my-2 py-2 px-4 rounded-md  w-full outline-none focus:ring-2 focus:ring-pink-400"
                                 ></textarea>
                             </div>
                             <button
-                             id='btn'
+                                id='btn'
                                 type="submit"
                                 className="border-2 text-md mt-7 rounded-md py-2 px-4 bg-gradient-to-tr from-[#ff4694] to-[#776fff] hover:bg-gradient-to-tr from-[#776fff] to-[#ff4694] text-gray-100 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-pink-500"
                             >

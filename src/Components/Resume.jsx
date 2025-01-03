@@ -1,6 +1,6 @@
 import React from 'react';
 import './Resume.css'
-import resume from '../assets/Abhinav Mishra Cv.pdf'
+import resume from '../assets/Abhinav Mishra Resume.pdf'
 function Resume() {
     const files = [
         {
